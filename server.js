@@ -1,6 +1,12 @@
 // DEPENDENCIES
-const express = require('express')
+const express = require('express');
+const { postgresMd5PasswordHash } = require('pg/lib/utils');
 const app = express()
+const { Sequelize } = require('sequelize')
+require('dotenv').config();
+
+
+
 
 // CONFIGURATION / MIDDLEWARE
 require('dotenv').config()
